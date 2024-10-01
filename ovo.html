@@ -1,54 +1,92 @@
-<html><head>
-    <meta charset="utf-8">
-    <title>Lesson: lesson-49</title>
-    <meta name="description" content="Google Classroom - lesson-49">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta name="robots" content="noindex">
-    <style type="text/css">
-        body {
-            color: #eee;
-            line-height: 1.43;
-            position: inherit;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            overflow: hidden;
-            height: 100%;
-        }
-        #lessons-content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            max-height: 100%;
-            min-width: 100%;
-            min-height: 100%;
-            box-sizing: border-box;
-        }
-    </style>
-    
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
-<link rel="stylesheet" type="text/css" href="https://class-60.org/css/bootstrap.min.css?1ssa">
-<link rel="stylesheet" type="text/css" href="https://class-60.org/css/style.css?1727658285">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="https://google.com/favicon.ico" type="image/x-icon">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-<style type="text/css" id="operaUserStyle"></style></head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+    <title>MotoX3M</title>
+    <!--Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-M9KJ1XPKLF');
+    </script>
+    <!--Google Analytics-->
+</head>
+
 <body>
-<script type="text/javascript" src="/js/jquery-3.6.2.min.js"></script>
-<iframe id="lessons-content" frameborder="0" allow="autoplay" allowfullscreen="" seamless="" scrolling="no" src="https://class-60.org/lessons/lesson-49"></iframe>
+    <div id="content"></div>
+    <div id="orientation"></div>
+    <div id="loader">Loading ...</div>
+    <script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+    <script type="text/javascript" src="assets/box2dweb/nape.min.js">
+        var nape = "nape.min.js";
+    </script>
+    <script type="text/javascript" src="assets/box2dweb/nape-debug-draw.min.js"></script>
+    <script type="text/javascript" src="assets/box2dweb/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/box2dweb/easeljs-0.8.2.combined.js"></script>
+    <script type="text/javascript" src="assets/box2dweb/bluebird.min.js"></script>
 
-<script type="text/javascript">
-var lesson_link = atob('bGVzc29uLTQ5');
-$("#lessons-content").attr("src","https://class-60.org/lessons/"+lesson_link);
-</script>
 
-</body></html>
+    <script type="text/javascript">
+        var notIE11 = (typeof(Event) === 'function');
+
+        window["GD_OPTIONS"] = {
+            "gameId": "5b0abd4c0faa4f5eb190a9a16d5a1b4c",
+            "onEvent": function(event) {
+                switch (event.name) {
+                    case "SDK_GAME_START":
+                        // advertisement done, resume game logic and unmute audio
+                        var event;
+                        if (notIE11) {
+                            event = new Event("SDK_GAME_START");
+                        } else {
+                            event = document.createEvent('Event');
+                            event.initEvent('SDK_GAME_START', true, true);
+                        }
+                        document.getElementById("content").dispatchEvent(event);
+                        break;
+                    case "SDK_GAME_PAUSE":
+                        // pause game logic / mute audio
+                        var event;
+                        if (notIE11) {
+                            event = new Event("SDK_GAME_PAUSE");
+                        } else {
+                            event = document.createEvent('Event');
+                            event.initEvent('SDK_GAME_PAUSE', true, true);
+                        }
+                        document.getElementById("content").dispatchEvent(event);
+                        break;
+                    case "SDK_GDPR_TRACKING":
+                        // this event is triggered when your user doesn't want to be tracked
+                        console.log("SDK_GDPR_TRACKING");
+                        break;
+                    case "SDK_GDPR_TARGETING":
+                        // this event is triggered when your user doesn't want personalised targeting of ads and such
+                        console.log("SDK_GDPR_TARGETING");
+                        break;
+                    case "SDK_READY":
+                        // this event is triggered when your user doesn't want personalised targeting of ads and such
+                        console.log("SDK_READY");
+                        break;
+                }
+            },
+        };
+    </script>
+
+    <script type="text/javascript" src="motox3m4.min.js?30ce0fae5b364628ca27"></script>
+    <!--Anchor Ad Start-->
+		<script>
+			var afg={};afg.u=6328;afg.s=31;
+			afg.anchor="bottom";
+			document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
+		</script>
+		<!--Anchor Ad End-->
+</body>
+
+</html>
